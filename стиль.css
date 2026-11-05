@@ -1,0 +1,675 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+    background-color: black;
+    background-image: url("img/фон.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 10px 30px;
+    font: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+}
+
+/*шапка*/
+header {
+    margin-bottom: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 30px 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+header .inner {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.site-navigation {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header button,
+header .buttonsAftorization {
+    margin-left: auto;
+}
+
+.logo {
+    margin-bottom: 100px;
+}
+
+.main-columns {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    padding: 50px 80px;
+    margin-bottom: 50px;
+}
+
+.main-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+/*преимущества*/
+.advantages {
+    margin-bottom: 100px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-list h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.advantage {
+    width: 300px;
+    text-align: center;
+}
+
+/*новости*/
+.news {
+    width: 380px;
+}
+
+.news-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.new b {
+    margin-right: 200px;
+}
+
+.new a {
+    color: chartreuse;
+}
+
+/*галлерея*/
+.gallery {
+    width: 300px;
+}
+
+.gallery-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.buttons-gallery-next {
+    margin-left: 82px;
+}
+
+/*контакты*/
+.contacts {
+    width: 380px;
+}
+
+.contacts p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+/*связь*/
+.connection {
+    width: 340px;
+}
+
+.connection-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.connection-item label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.connection-item input {
+    width: 140px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.connection button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.connection-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .inner {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social {
+    width: 144px;
+}
+
+.footer-social p {
+    margin-left: 38px;
+}
+
+/*страница все новости*/
+
+body.inner-page {
+    background-image: none;
+    background-color: white;
+    color: black;
+}
+
+.news-page li {
+    margin-bottom: 60px;
+}
+
+.news-page h2 {
+    font-size: xx-large;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.news-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== модальное окно входа ===== */
+
+.modal {
+    position: fixed;
+
+    color: #000000;
+
+    background-color: #f8f3f0;
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+
+    /* по умолчанию окно скрыто */
+    display: none;
+
+    width: 300px;
+    margin-left: -230px;
+    padding: 50px 80px;
+}
+
+/* окно показывается, когда в адресе есть #login */
+.modal-login:target {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(-2000px); }
+    70%  { transform: translateY(30px); }
+    90%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    display: block;
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: chartreuse;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #000000;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-login h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.modal-description {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 15px;
+    padding-right: 40px;
+
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid chartreuse;
+}
+
+.login-form input:focus {
+    border-color: #168600;
+}
+
+.login-icon-user {
+    background-image: url("img/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-form .login-help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.login-checkbox {
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: chartreuse;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+    text-decoration: none;
+}
+
+.login-form .button {
+    width: 100%;
+    margin-right: 0;
+    padding: 10px 30px;
+    font: inherit;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+}
+
+.votes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vote-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.vote-btn svg {
+    width: 13px;
+    height: 13px;
+}
+
+.like path {
+    fill: chartreuse;
+}
+
+.like {
+    color: chartreuse;
+}
+
+.dislike path {
+    fill: rgb(255, 0, 0);
+}
+
+.dislike {
+    color: rgb(255, 0, 0);
+}
+
+.news-date {
+    color: darkgrey;
+}
+
+/*страница магазин*/
+
+.inner-page .main-columns {
+    padding: 0;
+}
+
+.filters {
+    width: 200px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 50px;
+}
+
+fieldset legend {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.filters ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-item {
+    margin-bottom: 15px;
+}
+
+.filter-input {
+    display: none;
+}
+
+.filter-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-indicator {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    flex-shrink: 0;
+}
+
+input[type="radio"] ~ label .checkbox-indicator {
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked ~ label .checkbox-indicator::before,
+input[type="checkbox"]:checked ~ label .checkbox-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #000;
+}
+
+input[type="checkbox"]:checked ~ label .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked ~ label .checkbox-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7DC033;
+}
+
+.cards {
+    width: 800px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    padding: 15px;
+    margin: 0;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(225, 225, 225);
+    padding: 0;
+    margin: 0;
+}
+
+.card-price b {
+    padding: 10px 15px;
+    flex-shrink: 0;
+}
+
+.card-price .buttons {
+    flex-grow: 1;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.pagination-item {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.active {
+    background-color: white;
+    border: 1px solid chartreuse;
+    color: chartreuse;
+}
+
+/*страница товары*/
+.card-price {
+    width: 100px;
+    margin-bottom: 110px;
+}
+
+.info {
+    margin-left: 70px;
+}
+
+.have {
+    display: inline-block;
+}
+
+.art {
+    display: inline-block;
+    margin-left: 200px;
+    color: rgb(182, 182, 182);
+}
+
+.logo {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.news,
+.gallery {
+    border-style: groove;
+    border-width: 10px;
+    border-color: rgb(231, 235, 227);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.buttons {
+    width: auto;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+</head>
+
+<body>
+    <!-- шапка -->
+    <header>
+        <ul class="site-navigation">
+            <li>преимущества</li>
+            <li>новости</li>
+            <li>мерч</li>
+            <li>контакты</li>
+        </ul>
+        <ul class="user-navigation">
+            <li><a class="login-link" href="#login">Вход</a></li>
+        </ul>
+        <a class="login buttons buttonsAftorization" href="#login">вход</a>
+    </header>
+
+    <!-- основное содержание -->
+    <main>
+        <img class=logo src="img/ГлавноеЛого.png" alt="logo">
+        <!-- преимущества -->
+        <section class="advantages">
+            <ul class="advantages-list">
+                <li class="advantage">
+                    <h3>доступность</h3>
+                    <p>Платформа абсолютно бесплатна для скачивания и использования.</p>
+                </li>
+                <li class="advantage">
+                    <h3>Разнообразие</h3>
+                    <p>На платформе представлены миллионы игр различных жанров: от простых аркад до сложных симуляторов
+                        с собственной экономикой.</p>
+                </li>
+                <li class="advantage">
+                    <h3>Творчество</h3>
+                    <p> Roblox Studio позволяет любому пользователю создавать собственные игры без необходимости знания
+                        сложных языков программирования.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- новости -->
+        <div class="main-columns">
+            <section class="news">
+                <h2>новости</h2>
+                <ul class="news-list">
+                    <li class="new">
+                        <p>Создатели игры Steal a Brainrot на базе Roblox подали в суд на разработчиков аналогичного
+                            тайтла,
+                            сделанного на базе Fortnite. Об этом сообщил портал Aftermath...</p>
+                        <b>11 января</b>
+                        <a href="news.html">подробнее</a>
+                    </li>
+                    <li class="new">
+                        <p>Футбольный клуб «Зенит» объявил о запуске собственного сервера в Roblox. Об этом
+                            представители
+                            организации сообщили в Telegram...</p>
+                        <b>18 января</b>
+                        <a href="news.html">подробнее</a>
+                    </li>
+                </ul>
+                <a class="buttons" href="news.html">все новости</a>
+            </section>
+            <!-- галлерея -->
+            <section class="gallery">
+                <h2>галлерея</h2>
+                <ul class="gallery-list">
+                    <li><img src="img/Галлерея1.png" alt="" width="286px"></li>
+                </ul>
+                <button class="buttons buttons-gallery buttons-gallery-back">назад</button>
+                <button class="buttons buttons-gallery buttons-gallery-next">вперед</button>
+            </section>
+        </div>
+
+        <!-- контакты -->
+        <div class="main-columns">
+            <section class="contacts">
+                <h2>контактная информация</h2>
+                <p>Roblox Corporation <br> Сан-Матео, Калифорния, США <br> roblox.support@roblox.com</p>
+                <p>ВРЕМЯ РАБОТЫ: <br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 19:00</p>
+                <button class="buttons">подробнее</button>
+            </section>
+            <!-- связь -->
+            <section class="connection">
+                <h2>СВЯЖИТЕСЬ СО МНОЙ</h2>
+                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ</p>
+                <form class="connection-form" action="">
+                    <p class="connection-item">
+                        <label for="connection-date">дата</label>
+                        <input id="connection-date" type="date">
+                    </p>
+                    <p class="connection-item">
+                        <label for="connection-time">ВРЕМЯ</label>
+                        <input id="connection-time" type="time">
+
+                    </p>
+                    <p class="connection-item">
+                        <label for="connection-name">ваше имя</label>
+                        <input id="connection-name" type="text">
+                    </p>
+                    <p class="connection-item">
+                        <label for="connection-tel">телефон</label>
+                        <input id="connection-tel" type="tel">
+                    </p>
+                    <button class="buttons">отправить</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <!-- подвал -->
+    <footer>
+        <p>Roblox Corporation <br> Сан-Матео, Калифорния, США <br> roblox.support@roblox.com</p>
+        <div class="footer-social">
+            <p>давайте дружить</p>
+            <ul class="social">
+                <li>
+                    <a href=""><img src="img/facebook.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/instagram.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/vk.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- модальное окно входа -->
+    <section class="modal modal-login" id="login">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <a class="modal-close" href="#close" aria-label="Закрыть"></a>
+    </section>
+</body>
+
+</html>

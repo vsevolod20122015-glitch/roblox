@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+</head>
+
+<body class="inner-page">
+    <!-- шапка -->
+    <header>
+        <div class="inner">
+            <ul class="site-navigation">
+                <li>преимущества</li>
+                <li>новости</li>
+                <li>мерч</li>
+                <li>контакты</li>
+            </ul>
+            <button class="login buttons">вход</button>
+        </div>
+    </header>
+
+    <main style="width:1000px; margin: 0 auto;">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">Главная</li>
+            <li class="breadcrumbs-item breadcrumbs-active">мерч</li>
+        </ul>
+        <div class="main-columns">
+            <section class="filters">
+                <form class="filters-form" action="">
+                    <fieldset>
+                        <legend>категории:</legend>
+                        <ul class="filters-list">
+                            <li class="filter-item">
+                                <input id="checkbox-1" type="checkbox" class="filter-input">
+                                <label for="checkbox-1">
+                                    <span class="checkbox-indicator"></span>   
+                                    одежда и аксессуары
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="checkbox-2" type="checkbox" class="filter-input">
+                                <label for="checkbox-2">
+                                    <span class="checkbox-indicator"></span>
+                                    сувенирная продукция
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="checkbox-3" type="checkbox" class="filter-input">
+                                <label for="checkbox-3">
+                                    <span class="checkbox-indicator"></span>
+                                    канцелярия и офисные товары
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="checkbox-4" type="checkbox" class="filter-input">
+                                <label for="checkbox-4">
+                                    <span class="checkbox-indicator"></span>
+                                    подарочные наборы
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="checkbox-5" type="checkbox" class="filter-input">
+                                <label for="checkbox-5">
+                                    <span class="checkbox-indicator"></span>
+                                    игровые аксессуары
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="checkbox-6" type="checkbox" class="filter-input">
+                                <label for="checkbox-6">
+                                    <span class="checkbox-indicator"></span>
+                                    украшения и бижютерия
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>цена:</legend>
+                        <ul>
+                            <li class="filter-item">
+                                <input id="radio-1" type="radio" class="filter-input">
+                                <label for="radio-1">
+                                    <span class="checkbox-indicator"></span>
+                                    0-499 Р
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="radio-2" type="radio" class="filter-input">
+                                <label for="radio-2">
+                                    <span class="checkbox-indicator"></span>
+                                    499-1499 Р
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <input id="radio-3" type="radio" class="filter-input">
+                                <label for="radio-3">
+                                    <span class="checkbox-indicator"></span>
+                                    1499 и более Р
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button class="buttons">показать</button>    
+
+                </form>
+            </section>
+
+            <section class="cards">
+                <ul class="cards-list">
+                    <li class="card">
+                        <img src="img/1.png" alt="">
+                        <h3 class="card-title">толстовка с принтом ROBLOX</h3>
+                        <p class="card-price">
+                            <b>1500 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                    <li class="card">
+                        <img src="img/2.png" alt="">
+                        <h3 class="card-title">кружка с рисунком ROBLOX</h3>
+                        <p class="card-price">
+                            <b>500 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                    <li class="card">
+                        <img src="img/3.png" alt="">
+                        <h3 class="card-title">брелок с рисунком ROBLOX</h3>
+                        <p class="card-price">
+                            <b>250 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                    <li class="card">
+                        <img src="img/4.png" alt="">
+                        <h3 class="card-title">пенал с надписью ROBLOX</h3>
+                        <p class="card-price">
+                            <b>500 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                    <li class="card">
+                        <img src="img/5.png" alt="">
+                        <h3 class="card-title">подарочный набор ROBLOX</h3>
+                        <p class="card-price">
+                            <b>1250 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                    <li class="card">
+                        <img src="img/6.png" alt="">
+                        <h3 class="card-title">чехол для телефона ROBLOX</h3>
+                        <p class="card-price">
+                            <b>350 P</b>
+                            <button class="buttons">купить</button>
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="pagination">
+                    <li class="pagination-item active">1</li>
+                    <li class="pagination-item">2</li>
+                    <li class="pagination-item">3</li>
+                    <li class="pagination-item">4</li>
+                    <li class="pagination-item">5</li>
+                </ul>
+
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="inner">
+            <p>Roblox Corporation <br> Сан-Матео, Калифорния, США <br> roblox.support@roblox.com</p>
+            <div class="footer-social">
+                <p>давайте дружить</p>
+                <ul class="social">
+                    <li>
+                        <a href=""><img src="img/facebook.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/instagram.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/vk.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
